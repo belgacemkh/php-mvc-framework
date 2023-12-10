@@ -119,4 +119,16 @@ Create a new file named index.php in the src/Views/user/ directory. This view wi
 </body>
 </html>
 ```
+### Setting up Routes
+Create a new file named routes.php in the src/ directory. This file will define the routes for your application.
+```
+<?php
+
+use MVC\Router;
+use MVC\Controllers\UserController;
+
+$router = new Router();
+
+$router->addRoute('/', UserController::class, 'index');
+```
     
