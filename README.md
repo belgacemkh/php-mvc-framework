@@ -144,3 +144,8 @@ $router = require 'src/routes.php';
 $router->dispatch($uri);
 ``` 
     
+Run the built-in PHP web server to test your application:
+``` 
+php -S localhost:8000
+``` 
+Visit http://localhost:8000 in your web browser to see the user list.
