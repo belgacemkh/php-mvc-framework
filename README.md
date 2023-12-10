@@ -2,10 +2,14 @@
 In this tutorial, you will learn how to build a PHP Model-View-Controller (MVC) framework from scratch.
 ## Step 1: Setting up the Project
 Create a new directory for your project and navigate to it using the command line:
-`mkdir php-mvc-framework`
-`cd php-mvc-framework`
+```
+mkdir php-mvc-framework
+cd php-mvc-framework
+```
 Initialize a new Composer project:
-`composer init`
+```
+composer init
+```
 Follow the prompts to set up your project. When asked for dependencies, leave it empty for now.
 ## Step 2: Creating the Directory Structure
 Create the following directory structure for your project:
@@ -42,4 +46,20 @@ class Router {
     }
 }
 ```
+## Base Controller
+Create a new file named Controller.php in the src/ directory. This file will contain the base controller class that all other controllers will extend.
+```
+<?php
+
+namespace MVC;
+
+class Controller {
+    protected function render($view, $data = []) {
+        extract($data);
+
+        include "Views/$view.php";
+    }
+}
+```
+    
     
