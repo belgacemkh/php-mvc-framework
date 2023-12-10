@@ -1,4 +1,5 @@
 # Building a PHP MVC Framework from Scratch
+![C'est une révision que je fait sur PHP et MySQL](https://myoctocat.com/assets/images/base-octocat.svg)
 In this tutorial, you will learn how to build a PHP Model-View-Controller (MVC) framework from scratch.
 ## Step 1: Setting up the Project
 Create a new directory for your project and navigate to it using the command line:
