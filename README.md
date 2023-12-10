@@ -131,4 +131,16 @@ $router = new Router();
 
 $router->addRoute('/', UserController::class, 'index');
 ```
+### Testing the Application
+Create a new file named index.php in the root directory of your project. This file will serve as the entry point for your application.
+```
+<?php
+
+require 'vendor/autoload.php';
+
+$uri = $_SERVER['REQUEST_URI'];
+
+$router = require 'src/routes.php';
+$router->dispatch($uri);
+``` 
     
