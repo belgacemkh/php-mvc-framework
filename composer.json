@@ -1,0 +1,17 @@
+{
+    "name": "devbe/php-mvc-framework",
+    "description": "In this tutorial, you will learn how to build a PHP Model-View-Controller (MVC) framework from scratch.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Devbe\\PhpMvcFramework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Belgacem Khadher",
+            "email": "devbekh@gmail.com"
+        }
+    ],
+    "require": {}
+}
