@@ -61,5 +61,24 @@ class Controller {
     }
 }
 ```
+## Implementing an Example Application
+### Creating a Model
+Create a new file named User.php in the src/Models/ directory. This model will represent a user in your application.
+```
+<?php
+
+namespace MVC\Models;
+
+class User {
+    public $name;
+    public $email;
+
+    public function __construct($name, $email) {
+        $this->name = $name;
+        $this->email = $email;
+    }
+}
+```
+
     
     
